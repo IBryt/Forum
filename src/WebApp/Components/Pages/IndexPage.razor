@@ -1,3 +1,28 @@
-﻿@page "/"
+﻿
+@page "/"
+@using Microsoft.AspNetCore.Authentication.Cookies;
+@using Microsoft.AspNetCore.Authentication.OpenIdConnect;
+@using Microsoft.AspNetCore.Components.Authorization
+@using Microsoft.AspNetCore.Authentication
+
+@inject LogOutService LogOutService
+@inject NavigationManager Nav
 
 <h1>Hello</h1>
+<AuthorizeView>
+    <Authorized>
+        <div>Authorized</div>
+    </Authorized>
+    <NotAuthorized>
+
+    <a aria-label="Sign in" href="@Pages.User.LogIn.Url(Nav)">login</a>
+    </NotAuthorized>
+</AuthorizeView>
+
+@code {
+    [CascadingParameter]
+    public HttpContext? HttpContext { get; set; }
+
+    private Task LogOutAsync()
+        => LogOutService.LogOutAsync(HttpContext!);
+}
