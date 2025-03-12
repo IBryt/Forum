@@ -10,40 +10,16 @@
 
     <title>Identity | AdventureWorks</title>
 
-    <link rel="icon" type="image/x-icon" href="favicon.png">
-    <link rel="shortcut icon" type="image/x-icon" href="~/favicon.png" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="~/favicon.ico" />
 
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
 </head>
 <body>
-    <div class='eshop-banner'>
-        <img role="presentation" src="/images/banner.png" />
-    </div>
-    <div class="eshop-header">
-        <div class="eshop-header-container">
-            <nav class="eshop-header-navbar">
-                <a href="@Configuration["WebAppClient"]" class='logo logo-header'>
-                    <img alt="AdventureWorks" src='/images/logo-header.svg' />
-                </a>
-            </nav>
-      </div>
-    </div>
-
     <div class="content">
         @RenderBody()
     </div>
-
-    <footer class='eshop-footer'>
-        <div class='eshop-footer-content'>
-            <div class='eshop-footer-row'>
-                <img role="presentation" src='/images/logo-footer.svg' class='logo logo-footer' />
-                <p>© AdventureWorks</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="~/lib/jquery/dist/jquery.slim.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
     @RenderSection("scripts", required: false)
