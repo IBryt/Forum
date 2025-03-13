@@ -17,13 +17,16 @@ global using Forum.ServiceDefaults;
 global using Identity.API;
 global using Identity.API.Configuration;
 global using Identity.API.Data;
+global using Identity.API.Identity.Account;
+global using Identity.API.Identity.Consent;
+global using Identity.API.Identity.Device;
+global using Identity.API.Identity.Diagnostics;
+global using Identity.API.Identity.Grants;
+global using Identity.API.Identity.Home;
 global using Identity.API.Models;
-global using Identity.API.Quickstart;
 global using Identity.API.Services;
 
 global using IdentityModel;
-
-global using IdentityServerHost.Quickstart.UI;
 
 global using Microsoft.AspNetCore.Authentication;
 global using Microsoft.AspNetCore.Authorization;
