@@ -1,4 +1,4 @@
-﻿namespace Forum.Identity.API;
+﻿namespace Identity.API;
 
 public class UsersSeed(ILogger<UsersSeed> _logger, UserManager<ApplicationUser> _userManager) : IDbSeeder<ApplicationDbContext>
 {

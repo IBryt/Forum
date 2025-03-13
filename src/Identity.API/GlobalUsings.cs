@@ -12,14 +12,18 @@ global using Duende.IdentityServer.Services;
 global using Duende.IdentityServer.Stores;
 global using Duende.IdentityServer.Validation;
 
-global using Forum.Identity.API;
-global using Forum.Identity.API.Configuration;
-global using Forum.Identity.API.Data;
-global using Forum.Identity.API.Models;
-global using Forum.Identity.API.Services;
 global using Forum.ServiceDefaults;
 
+global using Identity.API;
+global using Identity.API.Configuration;
+global using Identity.API.Data;
+global using Identity.API.Models;
+global using Identity.API.Quickstart;
+global using Identity.API.Services;
+
 global using IdentityModel;
+
+global using IdentityServerHost.Quickstart.UI;
 
 global using Microsoft.AspNetCore.Authentication;
 global using Microsoft.AspNetCore.Authorization;

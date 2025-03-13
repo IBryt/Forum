@@ -1,4 +1,4 @@
-﻿namespace Forum.Identity.API.Services;
+﻿namespace Identity.API.Services;
 
 public interface ILoginService<T>
 {

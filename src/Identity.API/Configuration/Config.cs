@@ -1,4 +1,4 @@
-﻿namespace Forum.Identity.API.Configuration;
+﻿namespace Identity.API.Configuration;
 
 public class Config
 {
